@@ -1,0 +1,93 @@
+<!--/
+  Базовый шаблон сайта — это структура, которая задаёт общий каркас для всех страниц веб-сайта. 
+  Он включает в себя стандартную разметку и оформление, такие как шапка, навигационное меню, 
+  основной контент и подвал. Использование базового шаблона позволяет обеспечить единообразие 
+  всех страниц сайта, гарантируя, что они будут выглядеть одинаково и иметь схожую структуру. 
+  Такой подход упрощает дальнейшую разработку, поскольку разработчику не нужно повторно создавать 
+  одну и ту же разметку для каждой страницы. Это также облегчает обслуживание и обновление сайта, 
+  поскольку изменения в шаблоне автоматически применяются ко всем страницам, использующим этот шаблон.
+  /-->
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap 3: Template</title>
+  
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+        <!--/ Устанавливаем класс для основного содержания - он отвечает за адаптивность /-->
+        <div class="container">
+            <!--/ Формируем Заголовок с набором навигации /-->
+            <div class="header clearfix">
+              <nav>
+                <!--/ Указываем тип навигации и ее расположение /-->
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <!--/ Устанавливаем стили отображение Заголовка /-->
+              <h3 class="text-muted">Название проекта</h3>
+            </div>
+      
+            <!--/ Используем стиль *jumbotron* для выделение самой главной части страницы /-->
+            <div class="jumbotron">
+                <h1>Responsive Design</h1>
+                <p class="lead">Говорят, что мир не стоит на месте, и ваш сайт тоже не должен! Благодаря адаптивному дизайну, он будет выглядеть прекрасно на любых устройствах, от смартфонов до больших экранов. Никаких странных искажений или необходимости приближать текст на экране телефона — просто уютно для всех!</p>
+                <p><a class="btn btn-lg btn-success" href="#" role="button">Следить за обновлениями</a></p>
+            </div>
+      
+            <!--/ Задаем сетку для создания разметрки /-->
+            <div class="row">
+                <!--/ Задаем размер колонки, как кол-во используемых колонок внутри сетки 12х12 /-->
+                <div class="col-lg-6">
+                    <h4>Шаблоны — это удобно</h4>
+                    <p>Создайте один базовый шаблон, и все страницы сайта будут работать как по маслу. Единожды настроив, забудьте про постоянные правки на каждой странице!</p>
+
+                    <h4>Чистый код — здоровый сайт</h4>
+                    <p>Пишите код так, чтобы он не выглядел как чаша для супа. Чем чище код, тем легче с ним работать в будущем!</p>
+
+                    <h4>Тестирование — лучший друг разработчика</h4>
+                    <p>Не забывайте тестировать ваш сайт. Чем больше ошибок вы найдете до релиза, тем меньше их найдут пользователи (и шеф).</p>
+                </div>
+      
+                <!--/ Задаем размер колонки, наши колонки должны быть одинаковы, 6 + 6 /-->
+                <div class="col-lg-6">
+                    <h4>Как не заблудиться в коде</h4>
+                    <p>Научитесь расставлять комментарии и использовать отступы. Это не только облегчит жизнь вам, но и сделает вас любимцем коллег!</p>
+
+                    <h4>Верстка — это искусство</h4>
+                    <p>Сделайте так, чтобы ваш сайт не только работал, но и выглядел как произведение искусства. Цвета, шрифты и отступы — это не просто детали, а важная часть вашего визуального шедевра.</p>
+
+                    <h4>Адаптивность для ленивых</h4>
+                    <p>Не бойтесь мобильных пользователей! Используйте медиазапросы и забудьте про проблемы с отображением на маленьких экранах.</p>
+
+                </div>
+            </div>
+      
+            <!--/ Формируем блок, который приклеян к низу окна, в нем так же можно указать права и ссылки /-->
+            <footer class="footer">
+              <p>&copy; 2025 Права в которых можно упомянуть себя.</p>
+            </footer>      
+        </div>
+
+      <!-- Javascript библиотеки и скрипты необходимые для работы -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" 
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    </body>
+  </html>
